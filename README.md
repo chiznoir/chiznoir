@@ -44,7 +44,7 @@ Tinkering     Localization tooling and custom keyboards
 
 <div align="center">
 
-[![Tokscale Stats](https://tokscale.ai/api/embed/chiznoir/svg?sort=cost&compact=1)](https://tokscale.ai/u/chiznoir)
+[![Tokscale Stats](https://tokscale.ai/api/embed/chiznoir/svg?tokens=compact&cost=compact)](https://tokscale.ai/u/chiznoir)
 
 </div>
 ## 📈 Contribution Graph
