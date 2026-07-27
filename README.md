@@ -49,9 +49,9 @@ Tinkering     Localization tooling and custom keyboards
 </div>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="GitHub contribution grid snake" src="https://raw.githubusercontent.com/chiznoir/chiznoir/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="GitHub contribution grid snake" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
 </picture>
 
 
