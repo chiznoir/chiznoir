@@ -40,13 +40,15 @@ Tinkering     Localization tooling and custom keyboards
 
 </div>
 
-## GitHub activity
+## 📈 Contribution Graph
 
 <div align="center">
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=chiznoir&bg_color=121214&color=C9C5C5&line=9F6675&point=C08497&area=true&area_color=50343B&hide_border=true" alt="CHIZNOIR GitHub activity graph" />
 
 </div>
+
+## 🐍 Contribution Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake-dark.svg" />
@@ -60,3 +62,5 @@ Tinkering     Localization tooling and custom keyboards
 <div align="center">
   <sub>Make the hard parts explicit. Automate the boring parts.</sub>
 </div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:27272A,100:E11D48&height=100&section=footer" alt="" />
