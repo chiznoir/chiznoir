@@ -1,8 +1,8 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:27272A,100:E11D48&height=190&section=header&text=CHIZNOIR&fontSize=58&fontColor=FAFAFA&animation=fadeIn&fontAlignY=36&desc=Software%20systems%20%7C%20AI%20workflows%20%7C%20automation&descAlignY=58&descSize=17" alt="CHIZNOIR — Software systems, AI workflows, and automation" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:27272A,100:E11D48&height=190&section=header&text=CHIZNOIR&fontSize=58&fontColor=FAFAFA&animation=fadeIn&fontAlignY=36&desc=Infrastructure%20software%20%C2%B7%20Dev%20tooling%20%C2%B7%20AI%20workflows&descAlignY=58&descSize=17" alt="CHIZNOIR — Infrastructure software, dev tooling, and AI workflows" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FB7185&center=true&vCenter=true&width=720&lines=Building+tools+that+make+complex+work+boring;Agentic+workflows+with+real+guardrails;Infrastructure+software+that+has+to+stay+up" alt="Building reliable developer tools and infrastructure software" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FB7185&center=true&vCenter=true&width=720&lines=Infrastructure+software+that+has+to+stay+up;Agentic+workflows+with+real+guardrails;Tooling+that+makes+complex+work+boring" alt="Building reliable developer tools and infrastructure software" />
 
 **R&D engineer building software for critical infrastructure, plus the tooling that keeps that work sane.**
 
@@ -13,9 +13,23 @@
 ```text
 Day job       R&D on always-on infrastructure systems
               C/C++ on Windows & Linux, Node.js/TypeScript services
-Side bench    Agentic dev workflows: project memory, code intelligence, Git hygiene
+On the side   Agentic dev workflows: project memory, code intelligence, Git hygiene
 Tinkering     Localization tooling, custom keyboards
 ```
+
+## Activity
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/activity-graph.svg" alt="CHIZNOIR contribution stats and the last 31 days of activity" />
+
+</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="GitHub contribution grid snake" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
+</picture>
 
 ## Stack & tools
 
@@ -39,21 +53,6 @@ Tinkering     Localization tooling, custom keyboards
 [![Tokscale Stats](https://tokscale.ai/api/embed/chiznoir/svg?tokens=compact&cost=compact)](https://tokscale.ai/u/chiznoir)
 
 </div>
-
-## Activity
-
-<div align="center">
-
-<img width="100%" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/activity-graph.svg" alt="CHIZNOIR contributions over the last 31 days" />
-
-</div>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
-  <img width="100%" alt="GitHub contribution grid snake" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake.svg" />
-</picture>
-
 
 ---
 

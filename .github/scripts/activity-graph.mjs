@@ -15,6 +15,7 @@ const query = `query($login: String!) {
   user(login: $login) {
     contributionsCollection {
       contributionCalendar {
+        totalContributions
         weeks { contributionDays { date contributionCount } }
       }
     }
@@ -31,12 +32,29 @@ if (!res.ok || body.errors || !body.data?.user) {
   throw new Error(`GitHub GraphQL failed (${res.status}): ${JSON.stringify(body.errors ?? body)}`);
 }
 
-const days = body.data.user.contributionsCollection.contributionCalendar.weeks
-  .flatMap((w) => w.contributionDays)
-  .slice(-DAYS);
+const calendar = body.data.user.contributionsCollection.contributionCalendar;
+const allDays = calendar.weeks.flatMap((w) => w.contributionDays);
+const days = allDays.slice(-DAYS);
 
-const W = 1200, H = 360;
-const pad = { top: 72, right: 40, bottom: 56, left: 64 };
+// Today's count is often still 0 when the job runs, so it does not break the current streak.
+let current = 0;
+for (let i = allDays.length - 1; i >= 0; i--) {
+  if (allDays[i].contributionCount > 0) current++;
+  else if (i !== allDays.length - 1) break;
+}
+let longest = 0, run = 0;
+for (const d of allDays) {
+  run = d.contributionCount > 0 ? run + 1 : 0;
+  longest = Math.max(longest, run);
+}
+const stats = [
+  ["past year", calendar.totalContributions.toLocaleString("en-US")],
+  ["current streak", `${current}d`],
+  ["longest streak", `${longest}d`],
+];
+
+const W = 1200, H = 400;
+const pad = { top: 112, right: 40, bottom: 56, left: 64 };
 const plotW = W - pad.left - pad.right;
 const plotH = H - pad.top - pad.bottom;
 
@@ -72,11 +90,16 @@ const points = days
   .join("");
 
 const range = `${days[0].date} → ${days[days.length - 1].date}`;
+const statText = stats
+  .map(([label, value], i) =>
+    `<text x="${pad.left + i * 220}" y="76"><tspan class="stat">${value}</tspan><tspan class="sub" dx="8">${label}</tspan></text>`)
+  .join("");
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${login} contributions, last ${DAYS} days: ${total}">
 <style>
   text { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
   .title { fill: #FAFAFA; font-size: 20px; font-weight: 600; }
   .sub { fill: #A1A1AA; font-size: 13px; }
+  .stat { fill: #FB7185; font-size: 20px; font-weight: 700; }
   .axis { fill: #8B8B94; font-size: 12px; }
   .grid { stroke: #27272A; stroke-width: 1; }
   .line { fill: none; stroke: #FB7185; stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
@@ -90,7 +113,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" 
 </defs>
 <rect width="${W}" height="${H}" rx="12" fill="#121214"/>
 <text x="${pad.left}" y="38" class="title">Contributions · last ${DAYS} days</text>
-<text x="${W - pad.right}" y="38" class="sub" text-anchor="end">${total} total · ${range}</text>
+<text x="${W - pad.right}" y="38" class="sub" text-anchor="end">${total} in window · ${range}</text>
+${statText}
 ${grid}
 <path d="${area}" fill="url(#fill)"/>
 <path d="${line}" class="line"/>
