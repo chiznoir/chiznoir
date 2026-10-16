@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate profile assets
 
 on:
   schedule:
@@ -16,6 +16,17 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate activity graph
+        run: node .github/scripts/activity-graph.mjs "${{ github.repository_owner }}" dist/activity-graph.svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Generate snake assets
         uses: Platane/snk/svg-only@v3
         with:
@@ -24,7 +35,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Publish snake assets
+      - name: Publish profile assets
         uses: crazy-max/ghaction-github-pages@v5
         with:
           build_dir: dist

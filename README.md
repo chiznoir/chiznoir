@@ -40,7 +40,7 @@ Tinkering     Localization tooling and custom keyboards
 
 </div>
 
-## 📊 AI Usage
+## AI usage
 
 <div align="center">
 
@@ -48,15 +48,13 @@ Tinkering     Localization tooling and custom keyboards
 
 </div>
 
-## 📈 Contribution Graph
+## Activity
 
 <div align="center">
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=chiznoir&bg_color=121214&color=C9C5C5&line=9F6675&point=C08497&area=true&area_color=50343B&hide_border=true" alt="CHIZNOIR GitHub activity graph" />
+<img width="100%" src="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/activity-graph.svg" alt="CHIZNOIR contributions over the last 31 days" />
 
 </div>
-
-## 🐍 Contribution Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/chiznoir/chiznoir/refs/heads/output/github-contribution-grid-snake-dark.svg" />
