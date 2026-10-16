@@ -4,15 +4,14 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FB7185&center=true&vCenter=true&width=720&lines=Building+tools+that+make+complex+work+boring;Agentic+workflows+with+real+guardrails;Infrastructure+software+that+has+to+stay+up" alt="Building reliable developer tools and infrastructure software" />
 
-**R&D engineer building software for transportation infrastructure, plus the tooling that keeps that work sane.**
+**R&D engineer building software for critical infrastructure, plus the tooling that keeps that work sane.**
 
 </div>
 
 ## What I do
 
 ```text
-Day job       R&D on transportation infrastructure systems
-              field devices / backend services / desktop operator tools
+Day job       R&D on always-on infrastructure systems
               C/C++ on Windows & Linux, Node.js/TypeScript services
 Side bench    Agentic dev workflows: project memory, code intelligence, Git hygiene
 Tinkering     Localization tooling, custom keyboards
