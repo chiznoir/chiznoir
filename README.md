@@ -2,27 +2,20 @@
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:09090B,50:27272A,100:E11D48&height=190&section=header&text=CHIZNOIR&fontSize=58&fontColor=FAFAFA&animation=fadeIn&fontAlignY=36&desc=Software%20systems%20%7C%20AI%20workflows%20%7C%20automation&descAlignY=58&descSize=17" alt="CHIZNOIR — Software systems, AI workflows, and automation" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FB7185&center=true&vCenter=true&width=720&lines=Building+tools+that+make+complex+work+boring;Agentic+workflows+with+real+guardrails;Automate.+Observe.+Ship." alt="Building reliable developer tools and automation" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2800&pause=900&color=FB7185&center=true&vCenter=true&width=720&lines=Building+tools+that+make+complex+work+boring;Agentic+workflows+with+real+guardrails;Infrastructure+software+that+has+to+stay+up" alt="Building reliable developer tools and infrastructure software" />
 
-**I build production systems, developer tools, and practical AI-assisted workflows across native and web stacks.**
+**R&D engineer building software for transportation infrastructure, plus the tooling that keeps that work sane.**
 
 </div>
 
-## About
-
-- Building and maintaining software across **device, service, and desktop boundaries**
-- Modernizing brownfield **C/C++ systems across Windows and Linux**
-- Working fluently across **C, C++, Node.js/TypeScript, Python, and shell**, choosing the tool that fits the system rather than forcing one stack everywhere
-- Researching AI-assisted workflows built around agents, durable project memory, code intelligence, and reviewable Git practices
-- Developing personal tools for localization workflows and custom hardware
-
-## Current focus
+## What I do
 
 ```text
-Building      Production software across devices, services, and desktop tools
-Exploring     AI-assisted development workflow automation
-Modernizing   Cross-platform C/C++ and networked systems
-Tinkering     Localization tooling and custom keyboards
+Day job       R&D on transportation infrastructure systems
+              field devices / backend services / desktop operator tools
+              C/C++ on Windows & Linux, Node.js/TypeScript services
+Side bench    Agentic dev workflows: project memory, code intelligence, Git hygiene
+Tinkering     Localization tooling, custom keyboards
 ```
 
 ## Stack & tools
